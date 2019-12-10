@@ -1,0 +1,29 @@
+html {
+    width: 100%;
+    min-width: 100%;
+}
+
+body {
+    width: 100%;
+    background-color: darkorange;
+    color: white;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: darkorange;
+    height: 80px;
+}
+
+nav a {
+    color: white;
+    font-size: 14pt;
+    text-decoration: none;
+}

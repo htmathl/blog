@@ -6,21 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Posts</title>
-    <link rel="stylesheet" href="{% static 'estilo.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/estilo.css' %}">
 </head>
 <body>
-    {% if nome == 'lucas' %}
-        <h1>Bem vindx ao Blog {{nome}}</h1>
-    {% elif nome == 'carlos' %}
-    <h1>Bem vindx ao Blog {{nome}} blaa</h1>
-    {% else %}
-        <h2>IMPOSSIBLE</h2>
-    {% endif %}
+    <nav>
+        <a href="/">Home</a>
+        <a href="/posts">Posts</a>
+        <a href="/cadastro">Cadastros</a>
+        <a href="#">Login</a>
+    </nav>
 
-    <ul>
-        {% for item in lista %}
-        <li>{{item}}</li>
-        {% endfor %}
-    </ul>
+    <img src="{% static 'images/gatinho.jpg' %}" alt=""/>
+
+    {% block content %}
+
+    {% endblock %}
 </body>
 </html>

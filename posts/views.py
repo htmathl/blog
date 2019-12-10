@@ -10,3 +10,9 @@ def home(request):
         'lista': lista_nomes,
     }
     return render(request, 'home.html', args)
+
+def post(req):
+    return render(req, 'posts.html')
+
+def cadastro(req):
+    return render(req, 'cadastro.html')
